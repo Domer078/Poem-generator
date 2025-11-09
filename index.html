@@ -9,11 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Poem Generator</title>
   </head>
   <body>
     <div class="container">
-      <header>PoetAI Generator</header>
+      <header>
+        <h1>PoetAI Generator</h1>
+      </header>
 
       <main>
         <div class="form-container">
@@ -24,12 +27,13 @@
               autofocus
               autocomplete="off"
               required
+              class="poem-input"
             />
-            <input type="submit" value="Generate Poem" />
+            <input type="submit" value="Generate Poem" class="poem-submit" />
           </form>
-          <div>ie:Flower, Paris or Cheese</div>
+          <div class="hint">ie:Flower, Paris or Cheese</div>
         </div>
-        <div>English Poem</div>
+        <div class="poem hidden">English Poem</div>
       </main>
 
       <footer>
