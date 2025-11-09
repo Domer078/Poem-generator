@@ -22,7 +22,7 @@
 
       <main>
         <div class="form-container">
-          <form>
+          <form id="form-button">
             <input
               type="text"
               placeholder="Enter a name of a poem"
@@ -30,12 +30,13 @@
               autocomplete="off"
               required
               class="poem-input"
+              id="poem-input"
             />
             <input type="submit" value="Generate Poem" class="poem-submit" />
           </form>
           <div class="hint">ie:Flower, Paris or Cheese</div>
         </div>
-        <div class="poem hidden">English Poem</div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
